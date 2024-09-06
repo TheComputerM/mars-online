@@ -21,7 +21,7 @@ async function main() {
   });
   cheerpjCreateDisplay(-1, -1, document.getElementById("app"));
 
-  await cheerpjRunJar("/app/Mars.jar");
+  await cheerpjRunJar(`/app/${import.meta.env.BASE_URL}/Mars.jar`);
 }
 
 main();
